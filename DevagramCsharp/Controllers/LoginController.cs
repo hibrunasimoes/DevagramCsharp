@@ -29,7 +29,7 @@ public class LoginController : ControllerBase
             _logger.LogError("There was an error logging in" + ex.Message);
             return StatusCode(StatusCodes.Status500InternalServerError, new AnswerErrorDTO()
             {
-                Description = "There was an error while logging in,
+                Description = "There was an error while logging in" ,
                 Status = StatusCodes.Status500InternalServerError
             });
         }
