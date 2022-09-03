@@ -22,7 +22,7 @@ namespace DevagramCsharp.Services
                     new Claim(ClaimTypes.Name, user.Name)
 
                 }),
-                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(keycryptography), SecurityAlgorithms.HmacSha256Signature)
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(keyCryptography), SecurityAlgorithms.HmacSha256Signature)
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);

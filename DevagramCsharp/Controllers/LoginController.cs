@@ -8,7 +8,7 @@ namespace DevagramCsharp.Controllers;
 
 [ApiController]
 [Route("api/[Controller]")]
-public class LoginController : ControllerBase
+public class LoginController : BaseController
 {
     private readonly ILogger<LoginController> _logger;
 
